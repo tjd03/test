@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-	<!-- Capitum Home Page-->
+	<!-- Capitum Feedback Page-->
 
 <html lang="en">
 <head>
@@ -26,13 +26,11 @@
     <a href="#!" class="brand-logo black-text">Capitum</a>
     <a href="#" data-target="mobile-sidenav" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
     <ul class="right hide-on-med-and-down">
-      <li><a class="black-text waves-effect waves-light-blue" href="index.html">Home</a></li>
+      <li><a class="black-text waves-effect waves-light-blue" href="C:\Users\Cory\Documents\Developing\Web Applications\capitum\index.html">Home</a></li>
       <li><a class="black-text waves-effect waves-light-blue" href="">Categories</a></li>
       <li><a class="black-text waves-effect waves-light-blue" href="">Trending</a></li>
       <!-- Dropdown Trigger For More Selection-->
       <li><a class="dropdown-trigger black-text waves-effect waves-light-blue" href="#!" data-target="dropdown-more">More<i class="material-icons right">arrow_drop_down</i></a></li>
-      <!-- Create A Poll Modal Trigger-->
-      <li><a class="btn blue darken-3 waves-effect waves-light modal-trigger" data-target="createPollModal" href="">Create a Poll</a></li>
     </ul>
   </div>
 </nav>
@@ -41,64 +39,67 @@
 <ul id="dropdown-more" class="dropdown-content">
   <li><a class="black-text waves-effect waves-light-blue" href="#!">About</a></li>
   <li class="divider"></li>
-  <li><a class="black-text waves-effect waves-light waves-light-blue" href="feedback/index.html">Feedback</a></li>
+  <li><a class="black-text waves-effect waves-light waves-light-blue" href="index.html">Feedback</a></li>
 </ul>
 
 <!-- Side Navigation Bar-->
 <ul class="sidenav" id="mobile-sidenav">
-  <li class="active"><a class="waves-effect waves-light-blue" href="index.html">Home</a></li>
+  <li><a class="waves-effect waves-light-blue" href="C:\Users\Cory\Documents\Developing\Web Applications\capitum\index.html">Home</a></li>
   <li><a class="waves-effect waves-light-blue" href="">Categories</a></li>
   <li><a class="waves-effect waves-light-blue" href="">Trending</a></li>
   <li><a class="dropdown-trigger waves-effect waves-light-blue" href="#!" data-target="dropdown-more-side">More<i class="material-icons right">arrow_drop_down</i></a></li>
-  <li><a class="btn blue darken-3 waves-effect waves-light modal-trigger" href="#createPollModal">Create a Poll</a></li>
 </ul>
 
 <!-- Dropdown Structure For More Selection Side Navigation Bar-->
 <ul id="dropdown-more-side" class="dropdown-content">
   <li><a class="black-text waves-effect waves-light-blue" href="#!">About</a></li>
   <li class="divider"></li>
-  <li><a class="black-text waves-effect waves-light waves-light-blue" href="feedback/index.html">Feedback</a></li>
+  <li class="active"><a class="black-text waves-effect waves-light waves-light-blue" href="index.html">Feedback</a></li>
 </ul>
 
-<!-- Create A Poll (Error Not Logged In Or Signed Up) Modal-->
-<!-- Modal Structure -->
-<div id="createPollModal" class="modal">
-  <div class="modal-content" style="padding-bottom: 15px;">
-    <h4>Hold On!</h4>
-    <p>To create a poll, you need to login or create an account first.</p>
-  </div>
-  <div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect btn-flat">Cancel</a>
-    <a href="signup/index.html" class="z-depth-0 btn blue darken-0 waves-effect waves-light">Sign Up</a> 
-    <a href="#loginModal" class="z-depth-0 modal-close btn blue darken-3 waves-effect waves-light modal-trigger">Login</a>
+<!-- First Section Content (Feedback Title) Section-->
+<div class="section container">
+  <h4 class="center-align">Feedback</h4>
+</div>
+<div class="divider container"></div>
+<div class="divider container"></div>
+
+<!-- Second Section Content (Feedback Description) Section-->
+<div class="section container">
+  <h6 class="center-align">Thank you for using Capitum! Your feedback is greatly appreciated and is essential for creating a better Capitum experience.</h6>
+</div>
+
+<!-- Third Section Content (Feedback Content Form Card Submit Button) Section-->
+<div class="section container padding-less-bottom">
+  <div id="feedbackCard" class="row">
+    <div class="col s12">
+      <div class="card grey lighten-5">
+        <div class="card-content black-text">
+          <span class="card-title">Form</span>
+          <div class="row margin-less-bottom">
+            <form id="feedbackForm" class="col s12">
+              <div class="row margin-less-bottom">
+                <div class="input-field col s12">
+                  <textarea id="feedbackArea" class="materialize-textarea"></textarea>
+                  <label for="feedbackArea">Type Here</label>
+                </div>
+              </div>
+              <div class="right-align">
+                <button class="btn blue darken-1 waves-effect waves-light" type="submit">Submit
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
+            </form>
+          </div> 
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<!-- Login Modal-->
-<!-- Modal Structure -->
-<div id="loginModal" class="modal padding-less">
-  <div class="modal-content" style="padding-bottom: 0px;">
-    <h4>Login</h4>
-    <div class="row margin-less">
-    <form class="col s12">
-      <div class="row margin-less">
-        <div class="input-field col s6 margin-less">
-          <input id="emailLogin" type="email" class="validate" required>
-          <label for="emailLogin">Email</label>
-          <span class="helper-text" data-error="invalid" data-success="valid"></span>
-        </div>
-        <div class="input-field col s6">
-          <input id="passwordLogin" type="password" required>
-          <label for="passwordLogin">Password</label>
-        </div>
-      </div>
-    </form>
-    </div>
-  </div>
-  <div class="modal-footer">
-    <a class="modal-close waves-effect btn-flat">Cancel</a>
-    <a href="#!" class="z-depth-0 btn blue darken-3 waves-effect waves-light">Login</a>
-  </div>
+<!-- Fourth Section Content (Anonymous Disclaimer Content Description) Section-->
+<div class="section container padding-less-top">
+  <p>*All feedback submitted is anonymous, if you would like to give authenticated feedback, you can email us at deltech17@gmail.com</p>
 </div>
 
 <!-- Compiled And Minified JavaScript From Materialize-->

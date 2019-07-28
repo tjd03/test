@@ -1,0 +1,31 @@
+/* Changing Color Of The Ripple Effect*/
+.waves-effect.waves-light-blue .waves-ripple {
+   /* The alpha value allows the text and background color
+   of the button to still show through. */
+    background-color: rgba(187, 222, 251, 0.65);
+  }
+/* Adding A Marginless-Bottom To The Row In The Login*/
+.margin-less-bottom {
+  margin-bottom: 0px;
+}
+.margin-less-top {
+  margin-top: 0px;
+}
+/* Adding A Paddingless-Bottom To The Modal-Content In The Login*/
+.padding-less-bottom {
+  padding-bottom: 0px;
+}
+.padding-less-left {
+  padding-left: 0px;
+}
+.padding-less-top {
+  padding-top: 0px;
+}
+/* Adding A Border-Radius To The Sign Up Card Form*/
+.card-border {
+  border-radius: 10px;
+}
+/* Adding A Bold Text To The Card Span Title*/
+.bold-text {
+  font-style: bold; 
+}

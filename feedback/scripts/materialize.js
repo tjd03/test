@@ -1,4 +1,4 @@
-// setup Home materialize components
+// setup Feedback materialize components
 document.addEventListener('DOMContentLoaded', function() {
 
   //initialize Side Navigation Bar
@@ -9,8 +9,4 @@ document.addEventListener('DOMContentLoaded', function() {
   var dropdown = document.querySelectorAll('.dropdown-trigger');
   M.Dropdown.init(dropdown);
 
-  //initialize Modal Trigger
-  var modal = document.querySelectorAll('.modal');
-  M.Modal.init(modal);
-
-}); 
+});
