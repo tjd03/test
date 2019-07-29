@@ -19,4 +19,8 @@
 /* Adding A No Border To The Button*/
 .border-less {
   border: none;
-} 
+}
+/* Adding A Comic Sans MS Font To The Capitum Title Section*/
+.title-font {
+  font-family: "Trebuchet MS", Helvetica, sans-serif; 
+}
