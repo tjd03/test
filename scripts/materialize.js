@@ -15,6 +15,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   //initialize Floating Action Button Trigger
   var floatingActionButton = document.querySelectorAll('.fixed-action-btn');
-  M.FloatingActionButton.init(floatingActionButton); 
+  M.FloatingActionButton.init(floatingActionButton);
 
-});
+  //initialize Scrollspy Trigger
+  var scrollSpy = document.querySelectorAll('.scrollspy');
+  M.ScrollSpy.init(scrollSpy);
+
+}); 
