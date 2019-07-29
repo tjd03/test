@@ -13,4 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var modal = document.querySelectorAll('.modal');
   M.Modal.init(modal);
 
-}); 
+  //initialize Floating Action Button Trigger
+  var floatingActionButton = document.querySelectorAll('.fixed-action-btn');
+  M.FloatingActionButton.init(floatingActionButton); 
+
+});

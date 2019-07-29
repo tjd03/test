@@ -27,5 +27,9 @@
 }
 /* Adding A Bold Text To The Card Span Title*/
 .bold-text {
-  font-style: bold; 
+  font-style: bold;
 }
+/* Adding A Hidden Visibility To The Sign Up Card Contents*/
+.hidden-visibility {
+  visibility: hidden;
+} 

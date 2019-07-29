@@ -21,7 +21,7 @@
 <body>
 
 <!-- Navigation Bar-->
-<nav class="white">
+<nav class="grey lighten-5">
   <div class="nav-wrapper container">
     <a href="#!" class="brand-logo black-text">Capitum</a>
     <a href="#" data-target="mobile-sidenav" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
@@ -32,7 +32,7 @@
       <!-- Dropdown Trigger For More Selection-->
       <li><a class="dropdown-trigger black-text waves-effect waves-light-blue" href="#!" data-target="dropdown-more">More<i class="material-icons right">arrow_drop_down</i></a></li>
       <!-- Create A Poll Modal Trigger-->
-      <li><a class="btn blue darken-3 waves-effect waves-light modal-trigger" data-target="createPollModal" href="">Create a Poll</a></li>
+      <li><a class="btn blue darken-3 waves-effect waves-light modal-trigger" style="margin-right: 0px;" data-target="createPollModal" href="">Create a Poll</a></li>
     </ul>
   </div>
 </nav>
@@ -69,7 +69,7 @@
   </div>
   <div class="modal-footer">
     <a href="#!" class="modal-close waves-effect btn-flat">Cancel</a>
-    <a href="signup/index.html" class="z-depth-0 btn blue darken-0 waves-effect waves-light">Sign Up</a> 
+    <a href="signup/index.html" class="z-depth-0 btn blue darken-0 waves-effect waves-light">Sign Up</a>
     <a href="#loginModal" class="z-depth-0 modal-close btn blue darken-3 waves-effect waves-light modal-trigger">Login</a>
   </div>
 </div>
@@ -77,27 +77,94 @@
 <!-- Login Modal-->
 <!-- Modal Structure -->
 <div id="loginModal" class="modal padding-less">
+  <div class="row margin-less">
+  <form id="loginForm" class="col s12">
   <div class="modal-content" style="padding-bottom: 0px;">
     <h4>Login</h4>
-    <div class="row margin-less">
-    <form class="col s12">
-      <div class="row margin-less">
+      <div id="loginContent" class="row margin-less">
         <div class="input-field col s6 margin-less">
           <input id="emailLogin" type="email" class="validate" required>
           <label for="emailLogin">Email</label>
-          <span class="helper-text" data-error="invalid" data-success="valid"></span>
+          <span id="validationText" class="helper-text" data-error="" data-success=""></span>
         </div>
         <div class="input-field col s6">
           <input id="passwordLogin" type="password" required>
           <label for="passwordLogin">Password</label>
         </div>
       </div>
-    </form>
+      <!-- Pre-Loading Visibility When Pressed The Login Button-->
+      <div id="preLoadingSection" class="center-align hide">
+      <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+
+            <div class="spinner-layer spinner-red">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+
+            <div class="spinner-layer spinner-yellow">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+
+            <div class="spinner-layer spinner-green">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
-  </div>
-  <div class="modal-footer">
+  <div id="loginFooter" class="modal-footer">
     <a class="modal-close waves-effect btn-flat">Cancel</a>
-    <a href="#!" class="z-depth-0 btn blue darken-3 waves-effect waves-light">Login</a>
+    <a id="loginButton" href="#!" class="z-depth-0 btn blue darken-3 waves-effect waves-light">Login</a>
+  </div>
+  </form>
+</div>
+</div>
+
+<!-- First Section Of The Home Page Content-->
+<!-- Welcome Description And User Authentication Welcome Message-->
+<div class="section container" style="padding-top: 0px;">
+  <div class="right-align">
+    <p style="margin-right: 16px;">Welcome, User</p>
+  </div>
+</div>
+
+<!-- Second Section Of The Home Page Floating Action Button And Continued Documentation Content Content-->
+<div class="section container">
+
+  <!-- Floating Action Button Content-->
+  <div class="fixed-action-btn click-to-toggle">
+    <a class="btn-floating btn-large blue darken-3">
+      <i class="large material-icons">arrow_upward</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating blue"><i class="material-icons">account_circle</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">add</i></a></li>
+    </ul>
   </div>
 </div>
 

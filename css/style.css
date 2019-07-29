@@ -10,5 +10,13 @@
 }
 /* Adding A Paddingless-Bottom To The Modal-Content In The Login*/
 .padding-less {
-  padding-bottom: 0px; 
+  padding-bottom: 0px;
 }
+/* Adding A Hidden Visibility To The Login Contents And Footers*/
+.hidden-visibility {
+  visibility: hidden;
+}
+/* Adding A No Border To The Button*/
+.border-less {
+  border: none;
+} 

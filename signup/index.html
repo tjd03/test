@@ -30,18 +30,62 @@
   <div id="signupInfo" class="row margin-less-bottom">
     <div class="col s12" style="padding-left: 0px;">
       <div class="card grey lighten-5 margin-less-top card-border">
-        <div class="card-content black-text">
+        <div id="signUpCardContent" class="card-content black-text">
           <span class="card-title black-text"><b>Sign up to create a poll</b></span>
           <div class="row margin-less-bottom">
             <form id="signUpForm" class="col s12">
-              <div class="row margin-less-bottom">
+              <div id="usernameSection" class="row margin-less-bottom">
                 <div class="input-field col s12">
                   <i class="material-icons prefix grey-text text-darken-2">account_circle</i>
                   <input id="usernameArea" type="text" class="validate" required>
                   <label for="usernameArea">Username</label>
                 </div>
               </div>
-              <div class="row margin-less-bottom">
+              <!-- Pre-Loading Visibility When Pressed The Sign Up Button-->
+              <div id="preLoadingSection" class="center-align hide">
+              <div class="preloader-wrapper big active">
+                    <div class="spinner-layer spinner-blue">
+                      <div class="circle-clipper left">
+                        <div class="circle"></div>
+                      </div><div class="gap-patch">
+                        <div class="circle"></div>
+                      </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+
+                    <div class="spinner-layer spinner-red">
+                      <div class="circle-clipper left">
+                        <div class="circle"></div>
+                      </div><div class="gap-patch">
+                        <div class="circle"></div>
+                      </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+
+                    <div class="spinner-layer spinner-yellow">
+                      <div class="circle-clipper left">
+                        <div class="circle"></div>
+                      </div><div class="gap-patch">
+                        <div class="circle"></div>
+                      </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+
+                    <div class="spinner-layer spinner-green">
+                      <div class="circle-clipper left">
+                        <div class="circle"></div>
+                      </div><div class="gap-patch">
+                        <div class="circle"></div>
+                      </div><div class="circle-clipper right">
+                        <div class="circle"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              <div id="emailSection" class="row margin-less-bottom">
                 <div class="input-field col s12 margin-less-bottom">
                   <i class="material-icons prefix grey-text text-darken-2">email</i>
                   <input id="emailArea" type="email" class="validate" required>
@@ -49,7 +93,7 @@
                   <span class="helper-text" data-error="invalid" data-success="valid"></span>
                 </div>
               </div>
-              <div class="row margin-less-bottom">
+              <div id="passwordSection" class="row margin-less-bottom">
                 <div class="input-field col s6">
                   <i class="material-icons prefix grey-text text-darken-2">lock</i>
                   <input id="passwordArea" type="password" required>
@@ -60,10 +104,10 @@
                   <label for="confirmPasswordArea">Confirm Password</label>
                 </div>
               </div>
-              <div class="black-text">Read below for information about signing up</div>
-              <div class="right-align">
-                <button id="cancelButton" class="btn-flat waves-effect">Cancel</button>
-                <button class="btn blue darken-1 waves-effect waves-light" type="submit">Sign Up</button>
+              <div id="descriptionSection" class="black-text">Read below for information about signing up</div>
+              <div id="buttonSection" class="right-align">
+                <button id="backButton" class="btn-flat waves-effect">Back</button>
+                <button id="signUpButton" class="btn blue darken-1 waves-effect waves-light" type="submit">Sign Up</button>
               </div>
             </form>
           </div>
@@ -77,7 +121,11 @@
     <div class="col s12" style="padding-left: 0px;">
       <div class="card grey lighten-5 margin-less-top card-border">
         <div class="card-content black-text">
-          <span class="card-title black-text bold-text"><b>Sign up to create a poll</b></span>
+          <span class="card-title black-text bold-text"></span>
+          <blockquote><b>Important: </b>Your password cannot be recovered because we do not access it, making your account more secure. Make sure to remember it.</blockquote>
+          <blockquote>You do not need an account to have almost full access to the site and to vote on other polls. Signing up is only neccessary to create your own polls and keep track of them.</blockquote>
+          <blockquote>No information, including any account information, will be used in any way. You will not recieve any emails unless requested. You need to provide an email simply to authenticate yourself when logging in.</blockquote>
+          <blockquote>Any poll content you or anyone else creates is not associated with Capitum, including all business, political, economic, and trademark affiliations, etc.</blockquote>
         </div>
       </div>
     </div>
