@@ -22,5 +22,16 @@
 }
 /* Adding A Comic Sans MS Font To The Capitum Title Section*/
 .title-font {
-  font-family: "Trebuchet MS", Helvetica, sans-serif; 
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
+/* Adding A Card Border With A Radius To The Information Cards Section Content*/
+.card-border {
+  border-radius: 10px;
+}
+/* Adding A Center In The Vertical Direction For The Information Cardss Section Content*/
+.center-vertical {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+} 
