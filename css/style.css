@@ -9,8 +9,12 @@
   margin-bottom: 0px;
 }
 /* Adding A Paddingless-Bottom To The Modal-Content In The Login*/
-.padding-less {
+.padding-less-bottom {
   padding-bottom: 0px;
+}
+/* Adding A PaddingLess-Left To The Example Cards Poll Information Section Content Content*/
+.padding-less-left {
+  padding-left: 0px;
 }
 /* Adding A Hidden Visibility To The Login Contents And Footers*/
 .hidden-visibility {
@@ -34,4 +38,20 @@
   top: 50%;
   -ms-transform: translate(-50%);
   transform: translate(-50%);
-} 
+}
+/* Adding A An Inline-Block Element To The Example Cards Information Section Content Content*/
+.inline-block {
+  display: inline-block;
+}
+/* Adding A Margin-Top-32px Margin To The Top Of The Card*/
+.margin-top-32 {
+  margin-top: 32px;
+}
+/* Adding A Margin-Top-48px Margin To The Top Of The Card*/
+.margin-top-48 {
+  margin-top: 48px;
+}
+/* Use Media Query to add a breakpoint at 800px: */
+@media screen and (max-width:604px) {
+  .margin-top-32 , .margin-top-48 {margin-top: 0px;} 
+}
