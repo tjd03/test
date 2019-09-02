@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+	<!-- Capitum Categories Page-->
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Debug Css StyleSheet-->
+	<!-- <link rel="stylesheet" href="C:\Users\Cory\Documents\Developing\Web Applications\Inkur\css\debug.css">-->
+  <title>Capitum</title>
+</head>
+<body>
+
+<!-- <div class="light-blue darken-3">-->
+
+<!-- Navigation Bar-->
+<nav class="grey lighten-5">
+  <div class="nav-wrapper container">
+    <a href="#!" class="brand-logo black-text">Capitum</a>
+    <a href="#" data-target="mobile-sidenav" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a class="black-text waves-effect waves-light-blue" href="C:\Users\Cory\Documents\Developing\Web Applications\capitum\index.html">Home</a></li>
+      <li><a class="black-text waves-effect waves-light-blue" href="index.html">Categories</a></li>
+      <li><a class="black-text waves-effect waves-light-blue" href="">Trending</a></li>
+      <!-- Dropdown Trigger For More Selection-->
+      <li><a class="dropdown-trigger black-text waves-effect waves-light-blue" href="#!" data-target="dropdown-more">More<i class="material-icons right">arrow_drop_down</i></a></li>
+      <!-- Create A Poll Modal Trigger-->
+      <li><a class="btn blue darken-3 waves-effect waves-light modal-trigger" style="margin-right: 0px;" data-target="createPollModal" href="">Create a Poll</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Dropdown Structure For More Selection Navigation Bar-->
+<ul id="dropdown-more" class="dropdown-content">
+  <li><a class="black-text waves-effect waves-light-blue" href="#!">About</a></li>
+  <li class="divider"></li>
+  <li><a class="black-text waves-effect waves-light waves-light-blue" href="C:\Users\Cory\Documents\Developing\Web Applications\capitum\feedback\index.html">Feedback</a></li>
+</ul>
+
+<!-- Side Navigation Bar-->
+<ul class="sidenav" id="mobile-sidenav">
+  <li class="active"><a class="waves-effect waves-light-blue" href="C:\Users\Cory\Documents\Developing\Web Applications\capitum\index.html">Home</a></li>
+  <li><a class="waves-effect waves-light-blue" href="index.html">Categories</a></li>
+  <li><a class="waves-effect waves-light-blue" href="">Trending</a></li>
+  <li><a class="dropdown-trigger waves-effect waves-light-blue" href="#!" data-target="dropdown-more-side">More<i class="material-icons right">arrow_drop_down</i></a></li>
+  <li><a class="btn blue darken-3 waves-effect waves-light modal-trigger" href="#createPollModal">Create a Poll</a></li>
+</ul>
+
+<!-- Dropdown Structure For More Selection Side Navigation Bar-->
+<ul id="dropdown-more-side" class="dropdown-content">
+  <li><a class="black-text waves-effect waves-light-blue" href="#!">About</a></li>
+  <li class="divider"></li>
+  <li><a class="black-text waves-effect waves-light waves-light-blue" href="C:\Users\Cory\Documents\Developing\Web Applications\capitum\feedback\index.html">Feedback</a></li>
+</ul>
+
+<!-- Create A Poll (Error Not Logged In Or Signed Up) Modal-->
+<!-- Modal Structure -->
+<div id="createPollModal" class="modal">
+  <div class="modal-content" style="padding-bottom: 15px;">
+    <h4>Hold On!</h4>
+    <p>To create a poll, you need to login or create an account first.</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect btn-flat">Cancel</a>
+    <a href="C:\Users\Cory\Documents\Developing\Web Applications\capitum\signup\index.html" class="z-depth-0 btn blue darken-0 waves-effect waves-light">Sign Up</a>
+    <a href="#loginModal" class="z-depth-0 modal-close btn blue darken-3 waves-effect waves-light modal-trigger">Login</a>
+  </div>
+</div>
+
+<!-- Login Modal-->
+<!-- Modal Structure -->
+<div id="loginModal" class="modal padding-less-bottom">
+  <div class="row margin-less">
+  <form id="loginForm" class="col s12">
+  <div class="modal-content" style="padding-bottom: 0px;">
+    <h4>Login</h4>
+      <div id="loginContent" class="row margin-less">
+        <div class="input-field col s6 margin-less">
+          <input id="emailLogin" type="email" class="validate" required>
+          <label for="emailLogin">Email</label>
+          <span id="validationText" class="helper-text" data-error="" data-success=""></span>
+        </div>
+        <div class="input-field col s6">
+          <input id="passwordLogin" type="password" required>
+          <label for="passwordLogin">Password</label>
+        </div>
+      </div>
+      <!-- Pre-Loading Visibility When Pressed The Login Button-->
+      <div id="preLoadingSection" class="center-align hide">
+      <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+
+            <div class="spinner-layer spinner-red">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+
+            <div class="spinner-layer spinner-yellow">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+
+            <div class="spinner-layer spinner-green">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  <div id="loginFooter" class="modal-footer">
+    <a class="modal-close waves-effect btn-flat">Cancel</a>
+    <a id="loginButton" href="#!" class="z-depth-0 btn blue darken-3 waves-effect waves-light">Login</a>
+  </div>
+  </form>
+</div>
+</div>
+
+<!-- First Section Of The Home Page Content-->
+<!-- Welcome Description And User Authentication Welcome Message-->
+<div class="section container" style="padding-top: 0px;">
+  <div class="right-align">
+    <p class="black-text" style="margin-right: 16px;">Welcome, User</p>
+  </div>
+</div>
+
+<!-- Second Section Of The Home Page Content-->
+<div class="section">
+  <div class="container">
+    <div class="row">
+    <div class="col s12 l6">
+      <div class="card grey lighten-4 hoverable" style="border-radius: 5px;">
+        <div class="card-content" style="padding-bottom: 0px;">
+          <div class="row margin-less valign-wrapper">
+            <div class="col s4">
+              <img class="responsive-img" src="basketball.png">
+            </div>
+            <div class="col s8">
+              <h3 class="black-text" style="margin-top: 0px; margin-bottom: 0px; margin-left:10px;">Sports</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-action" style="border: 0px; padding-top: 10px; padding-left: 18px; padding-right: 18px; padding-bottom: 14px;">
+          <p class="black-text right-align" style="margin-bottom: 0px; margin-top: 0px;">243</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 l6">
+      <div class="card grey lighten-4 hoverable" style="border-radius: 5px;">
+        <div class="card-content" style="padding-bottom: 0px;">
+          <div class="row margin-less valign-wrapper">
+            <div class="col s4">
+              <img class="responsive-img" src="game-controller.png">
+            </div>
+            <div class="col s8">
+              <h3 class="black-text" style="margin-top: 0px; margin-bottom: 0px; margin-left: 10px;">Gaming</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-action" style="border: 0px; padding-top: 10px; padding-left: 18px; padding-right: 18px; padding-bottom: 14px;">
+          <p class="black-text right-align" style="margin-bottom: 0px; margin-top: 0px;">643</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col s12 l6">
+      <div class="card grey lighten-4 hoverable" style="border-radius: 5px;">
+        <div class="card-content" style="padding-bottom: 0px;">
+          <div class="row margin-less valign-wrapper">
+            <div class="col s4">
+              <img class="responsive-img" src="handshake.png">
+            </div>
+            <div class="col s8">
+              <h3 class="black-text" style="margin-top: 0px; margin-bottom: 0px; margin-left: 10px;">Politics</h3>
+            </div>
+          </div>
+        </div>
+        <div class="card-action" style="border: 0px; padding-top: 10px; padding-left: 18px; padding-right: 18px; padding-bottom: 14px;">
+          <p class="black-text right-align" style="margin-bottom: 0px; margin-top: 0px;">843</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 l6">
+      <div class="card grey lighten-4 hoverable" style="border-radius: 5px;">
+        <div class="card-content" style="padding-bottom: 0px;">
+          <div class="row margin-less valign-wrapper">
+            <div class="col s4">
+              <img class="responsive-img" src="video-camera.png">
+            </div>
+            <div class="col s8">
+              <h4 class="black-text" style="margin-top: 0px; margin-bottom: 0px; margin-left: 10px;">Entertainment</h4>
+            </div>
+          </div>
+        </div>
+        <div class="card-action" style="border: 0px; padding-top: 10px; padding-left: 18px; padding-right: 18px; padding-bottom: 14px;">
+          <p class="black-text right-align" style="margin-bottom: 0px; margin-top: 0px;">1043</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col s12 l6">
+    <div class="card grey lighten-4 hoverable" style="border-radius: 5px;">
+      <div class="card-content" style="padding-bottom: 0px;">
+        <div class="row margin-less valign-wrapper">
+          <div class="col s4">
+            <img class="responsive-img" src="heartbeat.png">
+          </div>
+          <div class="col s8">
+            <h3 class="black-text" style="margin-top: 0px; margin-bottom: 0px; margin-left: 10px;">Health</h3>
+          </div>
+        </div>
+      </div>
+      <div class="card-action" style="border: 0px; padding-top: 10px; padding-left: 18px; padding-right: 18px; padding-bottom: 14px;">
+        <p class="black-text right-align" style="margin-bottom: 0px; margin-top: 0px;">1243</p>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 l6">
+    <div class="card grey lighten-4 hoverable" style="border-radius: 5px;">
+      <div class="card-content" style="padding-bottom: 0px;">
+        <div class="row margin-less valign-wrapper">
+          <div class="col s4">
+            <img class="responsive-img" src="list.png">
+          </div>
+          <div class="col s8">
+            <h3 class="black-text" style="margin-top: 0px; margin-bottom: 0px; margin-left: 10px;">Other</h3>
+          </div>
+        </div>
+      </div>
+      <div class="card-action" style="border: 0px; padding-top: 10px; padding-left: 18px; padding-right: 18px; padding-bottom: 14px;">
+        <p class="black-text right-align" style="margin-bottom: 0px; margin-top: 0px;">1443</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Seventh Section Of The Home Page Content Example Card Poll Question Information Section Content (Footer) Section Content-->
+<footer class="page-footer grey lighten-3">
+  <div class="container">
+    <div class="row" style="margin-bottom: 0px;">
+      <div class="col s12">
+        <div class="center-align">
+          <p class="black-text" style="margin-bottom: 64px;">© 2019. <b>Capitum,</b> an ongoing project. The code is licenced MIT.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer> 
+
+<!-- Compiled And Minified JavaScript From Materialize-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="scripts/materialize.js"></script>
+<script src="scripts/index.js"></script>
+
+</body>
+</html>
